@@ -1,0 +1,161 @@
+html{
+	overflow: hidden !important;
+}
+body{
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	
+}
+.bg{
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	top: 0; left: 0;
+	position: absolute;
+	z-index: -1;
+	transition: all 1s;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+.main{
+	height: 100%;
+	width: 100%;
+	display: ;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 0;
+}
+
+.biaoti{
+	font-size: 60px;
+	font-weight: 200;
+	color: white;
+	text-align: center;
+	margin-top: 150px;
+	transition: all 0.5s;
+}
+.biaoti:hover{
+	text-shadow: 0px 0px 30px #ffffff;
+	font-size: 70px;
+	transition: all 0.5s;
+}
+.search{
+	
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.search_input{
+	outline-style: none;
+	border: none;
+	border:solid 1px rgba(255, 255, 255, 0.4);
+	border-radius: 25px 0px 0px 25px;
+	padding: 6px 20px 6px 20px;
+	
+	font-size: 20px;
+	font-family: "microsoft yahei";
+	color: white;
+	font-weight: lighter;
+	
+	
+	
+	height: 36px;
+	width: 600px;
+	background-color: rgba(255,255,255,0.2);
+	transition: all 0.5s;
+}
+.search_input:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #ffffff;
+	box-shadow: 0px 0px 12px #ffffff;
+	transition: all 0.5s;
+}
+.search_input:focus{
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #ffffff;
+	box-shadow: 0px 0px 12px #ffffff;
+	transition: all 0.5s;
+}
+.search_button{
+	transform: translateX(-1px);
+	margin: 0px;
+	height: 50px;
+	width: 100px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 0px 25px 25px 0px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	font-size: 18px;
+	font-weight: 200;
+	transition: all 0.5s;
+}
+.search_button:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #ffffff;
+	box-shadow: 0px 0px 12px #ffffff;
+	transition: all 0.5s;
+}
+
+.buttons{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.button_daohang{
+	margin-top: 150px;
+	margin-right: 15px;
+	margin-left: 15px;
+	height: 50px;
+	width: 80px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	font-weight: 50;
+	transition: all 0.5s;
+}
+.button_daohang:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #ffffff;
+	box-shadow: 0px 0px 12px #ffffff;
+	height: 60px;
+	width: 100px;
+	border-radius: 30px;
+	font-size: 22px;
+	transition: all 0.5s;
+}
+.slogan{
+	width: 100%;
+	height: 26px;
+	left: 0px;
+	bottom: 150px;
+	//box-shadow: 0px 0px 12px #ffffff;
+	position: absolute;
+}
+.slogan2{
+	text-align: center;
+	color: #FFFFFF;
+	transition: all 0.5s;
+}
+.slogan2:hover{
+	text-shadow: 0px 0px 20px #ffffff;
+	transition: all 0.5s;
+}
+.footer{
+	width: 100%;
+	color: rgba(255,255,255,0.6);
+	font-size: 10px;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+}

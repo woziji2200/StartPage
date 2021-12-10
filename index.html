@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" charset="utf-8"  src="js/L2Dwidget.min.js"></script>
+		<script type="text/javascript" charset="utf-8"  src="js/main.js"></script>
+		<link rel="shortcut icon" href="img/logo.png">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<title>起始页</title>
+	</head>
+	<body>
+		<style type="text/css">
+			::-webkit-input-placeholder { color:rgba(255,255,255,0.8); }
+			::-moz-placeholder { color:rgba(255,255,255,0.8); }
+			:-ms-input-placeholder { color:rgba(255,255,255,0.8); }
+			input:-moz-placeholder { color:rgba(255,255,255,0.8); }
+		</style>
+		
+		<div class="main">
+			<p class="biaoti" id="biaoti">找点什么呢...</p>
+			<div class="search">
+				<div style="display: flex">
+					<input type="input" id="input_search" placeholder="输入点什么吧..." class="search_input" onfocus="inputGetFocus()" onblur="inputLoseFocus()" onkeydown="search2(event)"/>
+					<button class="search_button" onclick="search()">搜索</button>
+					
+				</div>
+				
+			</div>
+			
+			<div class="buttons">
+				<button class="button_daohang" onclick="window.open('https://bilibili.com');">Bilibili</button>
+				<button class="button_daohang" onclick="window.open('https://github.com');">Github</button>
+				<button class="button_daohang" onclick="window.open('https://tieba.baidu.com');">tieba</button>
+				<button class="button_daohang" onclick="window.open('https://store.steampowered.com');">Steam</button>
+				<button class="button_daohang" onclick="window.open('https://mail.qq.com');">QQmail</button>
+				<button class="button_daohang" onclick="window.open('https://tianqi.qq.com/index.htm');">Weather</button>
+				<button class="button_daohang" onclick="window.open('https://www.funny233.xyz');">Blog</button>
+			</div>
+			
+			
+			
+		</div>
+		
+		<div class="slogan">
+			<p id="slogan2" class="slogan2" onclick="loadYiYan()"></p>
+		</div>
+		
+		<p class="footer">©2021 <a href="https://www.funny233.xyz" target="_blank" style="color: rgba(255,255,255,0.7);">高坂滑稽果</a> &nbsp一句话来自<a href="https://hitokoto.cn/" target="_blank" style="color: rgba(255,255,255,0.7);">一言api</a> &nbsp<a href="https://github.com/woziji2200/StartPage" target="_blank" style="color: rgba(255,255,255,0.7);">Github</a></p>
+		<div class="bg" id="bg">
+			
+		</div>
+		
+		<script>
+					L2Dwidget.init(
+						{
+							pluginRootPath:"/",
+							pluginJsPath:"js/",
+							pluginModelPath:"assets/",
+							tagMode:false,
+							debug:false,
+							model:{scale:1,jsonPath:"assets/model.json"},
+							display:{position:"right",width:300,height:600,hOffset:0,vOffset:0},
+							mobile:{show:false},
+							log:false,
+						}
+					);
+		</script>
+		
+	</body>
+</html>
