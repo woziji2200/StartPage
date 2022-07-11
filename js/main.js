@@ -49,8 +49,9 @@ function loadYiYan(){
 		if(xmlhttp.readyState==4){
 			if(xmlhttp.status==200){
 				var js = JSON.parse(xmlhttp.responseText);
-				document.getElementById("slogan2").innerHTML=js.hitokoto+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+js.from;
-				console.log(js.hitokoto+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp————"+js.from);
+				document.getElementById("slogan-content").innerHTML=js.hitokoto;
+				document.getElementById("slogan-from").innerHTML="————"+js.from;
+				console.log(js.hitokoto+"   ————"+js.from);
 			}
 		}
 	}
