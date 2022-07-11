@@ -24,9 +24,10 @@ body{
 	opacity: 0;
 }
 .main{
-	height: 100%;
+	height: 60%;
 	width: 100%;
-	display: ;
+	display: flex;
+	flex-direction: column;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -34,6 +35,7 @@ body{
 }
 
 .biaoti{
+	flex: 1;
 	font-size: 60px;
 	font-weight: 200;
 	color: white;
@@ -47,7 +49,7 @@ body{
 	transition: all 0.5s;
 }
 .search{
-	
+	flex: 3;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -105,6 +107,7 @@ body{
 }
 
 .buttons{
+	flex: 8;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -137,19 +140,23 @@ body{
 .slogan{
 	width: 100%;
 	height: 26px;
-	left: 0px;
-	bottom: 150px;
-	//box-shadow: 0px 0px 12px #ffffff;
-	position: absolute;
+	margin-top: 15px;
+	/* left: 0px;
+	bottom: 150px; */
+	/* box-shadow: 0px 0px 12px #ffffff; */
+	/* position: absolute; */
 }
-.slogan2{
+.slogan-text{
 	text-align: center;
 	color: #FFFFFF;
 	transition: all 0.5s;
 }
-.slogan2:hover{
+.slogan-text:hover{
 	text-shadow: 0px 0px 20px #ffffff;
 	transition: all 0.5s;
+}
+.slogan-text #slogan-content{
+	margin-right: 20px;
 }
 .footer{
 	width: 100%;
